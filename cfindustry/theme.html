@@ -1,0 +1,106 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=<{$xoops_charset}>" />
+<title><{$xoops_sitename}> <{$xoops_pagetitle}></title>
+<link rel="stylesheet" type="text/css" media="all" href="<{$xoops_url}>/xoops.css" />
+<link rel="stylesheet" type="text/css" media="all" href="<{$xoops_imageurl}>style.css" />
+<meta name="description" content="<{$xoops_meta_description}>" />
+<meta name="keywords" content="<{$xoops_meta_keywords}>" />
+<meta http-equiv="content-language" content="<{$xoops_langcode}>" />
+
+
+<meta name="robots" content="<{$xoops_meta_robots}>" />
+
+
+<meta name="rating" content="<{$xoops_meta_rating}>" />
+
+
+<meta name="author" content="<{$xoops_meta_author}>" />
+
+
+<meta name="copyright" content="<{$xoops_meta_copyright}>" />
+
+<link href="<{$xoops_url}>/favicon.ico" rel="SHORTCUT ICON" />
+
+
+<!-- RMV: added module header -->
+
+
+<{$xoops_module_header}>
+
+
+<script type="text/javascript">
+
+
+<!--
+
+
+<{$xoops_js}>
+
+
+//-->
+
+
+</script>
+</head>
+
+<body>
+
+<div id="header2"><div id="header"><a href="<{$xoops_url}>"><{$xoops_sitename}></a>
+  <div id="slogan"><{$xoops_url}><br /><{$smarty.now|date_format:"%a, %b %e, %Y | %H:%M %Z"}></div>
+</div>
+<a href="<{$xoops_url}>/modules/news">News</a> <a href="<{$xoops_url}>/modules/newbb/">Forums</a> <a href="<{$xoops_url}>/modules/xcgal/">Photos</a> <a href="<{$xoops_url}>/modules/xoopspoll">Polls</a> <a href="<{$xoops_url}>/modules/contact">Contact</a></div>
+<div id="ligne"></div>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="200" valign="top" bgcolor="#333333"><div id="leftpanel"><{foreach item=block from=$xoops_lblocks}> <{include file="cfindustry/block.html"}> <{/foreach}></div>
+      <div align="center"><br />
+        <br />
+        <a href="<{$xoops_url}>/backend.php"><img src="<{$xoops_url}>/themes/<{$xoops_theme}>/rss.gif" alt="rss" width="127" height="158" border="0" /></a><br />
+        <div id="copyrightcf">Please do not remove this text.<br />
+        This theme is created by Casafree <a href="http://www.casafree.com/">Maroc</a>. You can download it for free from Casafree <a href="http://www.insidecasafree.com">blog</a> http://www.insidecasafree.com.<br />
+        Picture used in this theme is avaible at Casafree <a href="http://www.casafree.com/modules/xcgal/">Album Photos
+        </a></div>
+        <br />
+        <br />
+        <br />
+      </div></td>
+    <td valign="top"><center><{$xoops_banner}></center><table width="100%" border="0" cellspacing="5" cellpadding="0">
+        <tr>
+          <td><div id="content"> <{$xoops_contents}></div></td>
+        </tr>
+      </table><{if $xoops_showcblock == 1}>
+	  <table cellspacing="10"> 
+                <tr> 
+                  <td id="centerCcolumn" colspan="2"> <!-- Start center-center blocks loop --> 
+
+<{foreach item=block from=$xoops_ccblocks}> <{include file="cfindustry/block_center.html"}> <{/foreach}> 
+                    <!-- End center-center blocks loop --> </td> 
+                </tr> 
+                <tr> 
+                  <td id="centerLcolumn"> <!-- Start center-left blocks loop --> 
+<{foreach item=block from=$xoops_clblocks}> <{include file="cfindustry/block_center.html"}> <{/foreach}> 
+                    <!-- End center-left blocks loop --> </td> 
+                  <td id="centerRcolumn"> <!-- Start center-right blocks loop --> 
+<{foreach item=block from=$xoops_crblocks}> <{include file="cfindustry/block_center.html"}> <{/foreach}> 
+                    <!-- End center-right blocks loop --> </td> 
+                </tr> 
+      </table> 
+
+      <{/if}> 
+      <!-- End display center blocks --></td>
+    <td width="160" valign="top"><div id="rightpanel"><{foreach item=block from=$xoops_rblocks}> <{include file="cfindustry/block_right.html"}> <{/foreach}></div>
+    </td>
+  </tr>
+</table>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="200" height="30" bgcolor="#666666">    <div id="casafree"><span class="style4">Powered by <a href="http://www.xoops.org">Xoops</a> <a href="http://www.php.net/">Php</a> &amp; <a href="http://www.mysql.com">Mysql</a> <br />
+    Theme by <h1><a href="http://www.casafree.com">Casafree</a> Maroc</h1></span></div></td>
+    <td valign="top"><div class="style2"><{$xoops_footer}> - <{$meta_copyright}><br />
+      <a target="_blank" href="http://add.my.yahoo.com/rss?url=<{$xoops_url}>/backend.php"><img src="http://us.i1.yimg.com/us.yimg.com/i/us/my/addtomyyahoo4.gif" height="17" width="91" /></a><a target="_blank" href="http://www.bloglines.com/sub/<{$xoops_url}>/backend.php"></a>&nbsp;<a target="_blank" href="http://fusion.google.com/add?feedurl=<{$xoops_url}>/backend.php"><img src="http://buttons.googlesyndication.com/fusion/add.gif" alt="Add to Google" height="17" width="104" /></a>&nbsp; <a target="_blank" href="http://www.netvibes.com/subscribe.php?url=<{$xoops_url}>/backend.php"><img src="http://www.netvibes.com/img/add2netvibes.gif" alt="Add to Netvibes" height="17" width="91" /></a>&nbsp; <a target="_blank" href="http://www.newsgator.com/ngs/subscriber/subext.aspx?url=<{$xoops_url}>/backend.php"><img src="http://www.newsgator.com/images/ngsub1.gif" /></a> </div></td>
+  </tr>
+</table>
+</body>
+</html>
